@@ -29,7 +29,7 @@ public String toString() {
 }
 public double calcularHorasTrabajdas() {
 	double horasTrabajadas= ((horaHasta.getHour()-horaDesde.getHour())*60)+((horaHasta.getMinute())-horaDesde.getMinute());
-	return horasTrabajadas;
+	return (horasTrabajadas/60);
 }
 
 

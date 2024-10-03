@@ -25,7 +25,7 @@ public Teletrabajo(int idAsitencia, LocalDate fecha, String legajo, String motiv
 
 public double calcularHorasTrabajdas() {
 	double horasTrabajadas= tareasReaalizadas*1.5;
-	return horasTrabajadas;
+	return horasTrabajadas/60;
 }
 @Override
 public String toString() {

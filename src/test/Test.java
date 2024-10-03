@@ -20,12 +20,14 @@ public class Test {
 
 		try {
 			System.out.println(sistema.agregarTeletrabjo(LocalDate.of(2020, 10, 15),"3782","pandemia",9));
-			System.out.println(sistema.agregarTeletrabjo(LocalDate.of(2020, 10, 16),"3742","pandemia",7));
+			System.out.println(sistema.agregarTeletrabjo(LocalDate.of(2020, 10, 15),"3742","pandemia",7));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		};
 		
+		System.out.println(sistema.getAsistencias().get(0).calcularHorasTrabajdas());
+		System.out.println(sistema.getAsistencias().get(1).calcularHorasTrabajdas());
 		
 		System.out.println(sistema.traerAsistencia(LocalDate.of(2020,10,15)));
 		
