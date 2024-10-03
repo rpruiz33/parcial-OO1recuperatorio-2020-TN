@@ -77,8 +77,6 @@ public List<Asistencia> traerAsistencia(LocalDate fecha) {
 		if( asistencias.get(i).getFecha().equals(fecha)) {
 			aux.add(asistencias.get(i));
 		}
-	
-		
 		i++;
 	
 }
